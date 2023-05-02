@@ -4,7 +4,9 @@ Họ Tên|Lớp|Email
 Nguyễn Lê Hữu Thoại|10CT1|jacknguyen25207@gmail.com
 
 # Thông tin project
+
 ## Đề tài: Hệ thống phát hiện xe hơi đậu trước nhà
+
 ## Các thư viện sử dụng: `pytorch, OpenCV, Pillow`
 
 ## Các chức năng chính & kế hoạch thực hiện
