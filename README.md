@@ -15,3 +15,7 @@ Chức năng|Người thực hiện|Ngày hoàn thành dự kiến
 -|-|-
 Đăng kí project|Nguyễn Lê Hữu Thoại|30/04/2023
 Làm project|Nguyễn Lê Hữu Thoại|13/5/2023
+
+
+Link demo:
+https://drive.google.com/file/d/1-Z1R7UznqsZX-ZqjJnJvrLfpoiKMe2Yb/view?usp=sharing
