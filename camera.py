@@ -13,6 +13,7 @@ import pygame
 model_load = pickle.load(open('model.pickle', "rb"))
 webCam=cv2.VideoCapture(0)
 currentframe=0
+
 def read_testing_data():
     features_dict = {}
     pretrained = PretrainModel()
@@ -28,21 +29,12 @@ while True:
     success, frame=webCam.read()#frame là biến chứa ảnh, dùng biến này để predict
     
     X=read_testing_data()
-    # print(frame.shape)
-    # print(read_training_data().shape)
     y_test=model_load.predict(X.reshape(1,-1))#(1,-1) tức là (1,576)
-    # print(y_test)
     # cv2.imwrite('hinh'+str(currentframe)+'.jpg',frame)
-    # print(type(read_testing_data()))
     currentframe+=1
-    
-    pygame.mixer.music.play(1)
-    cv2.imshow('output',frame)#hiện camera(ko nhất thiết phải có,không ảnh hưởng đến code)
-    # if y_test[0]==1:
-    #     warn.append(1)
-    # else:
-    #     warn.append(0)
-    # if warn.append()
+    if currentframe==100:
+        pygame.mixer.music.play()
+    cv2.imshow('output',frame)   #hiện camera(ko nhất thiết phải có,không ảnh hưởng đến code)
 
 
     if cv2.waitKey(1)& 0xFF==ord('q'):#bấm q trên bàn phím để ngừng
